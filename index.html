@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Landing Page using HTML, CSS & Javascript</title>
+
+    <!-- ==== STYLE.CSS ==== -->
+    <link rel="stylesheet" href="./css/style.css" />
+
+    <!-- ====  REMIXICON CDN ==== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!-- ==== ANIMATE ON SCROLL CSS CDN  ==== -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <!-- ==== HEADER ==== -->
+    <header class="container header">
+      <!-- ==== NAVBAR ==== -->
+      <nav class="nav">
+        <div class="logo">
+          <h2>Velvin Technologies</h2>
+        </div>
+
+        <div class="nav_menu" id="nav_menu">
+          <button class="close_btn" id="close_btn">
+            <i class="ri-close-fill"></i>
+          </button>
+
+          <ul class="nav_menu_list">
+            <li class="nav_menu_item">
+              <a href="#" class="nav_menu_link">Myburgo</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="#" class="nav_menu_link">about</a>
+            </li>
+          </ul>
+        </div>
+
+        <button class="toggle_btn" id="toggle_btn">
+          <i class="ri-menu-line"></i>
+        </button>
+      </nav>
+    </header>
+
+    <section class="wrapper">
+      <div class="container">
+        <div class="grid-cols-2">
+          <!-- Left Column: Introduction -->
+          <div class="grid-item-1">
+            <h1 class="main-heading">
+              Welcome to <span>Velvin Technologies.</span>
+              <br />
+              Innovating Tomorrow, Today.
+            </h1>
+            <p class="info-text">
+              Velvin Technologies is a forward-thinking IT company, delivering
+              cutting-edge digital solutions designed to transform businesses and
+              empower individuals. With a focus on innovation and scalability, we are
+              dedicated to shaping the future of technology.
+            </p>
+    
+            <!--
+            <div class="btn_wrapper">
+              <button class="btn view_more_btn">
+                Explore Our Services <i class="ri-arrow-right-line"></i>
+              </button>
+    
+              <button class="btn documentation_btn">Learn More About Us</button>
+            </div>
+            -->
+          </div>
+          
+          <!-- Right Column: Image -->
+          <div class="grid-item-2">
+            <div class="team_img_wrapper">
+              <img src="./img/hero.svg" alt="Velvin Technologies Team" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="wrapper">
+      <div class="container" data-aos="fade-up" data-aos-duration="1000">
+        <div class="grid-cols-3">
+          <!-- First Column -->
+          <div class="grid-col-item">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9.75 17L9 20l-1 1h8l-1-1-.75-3M3 13h18M5 17h14a2 2 0 002-2V5a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                />
+              </svg>
+            </div>
+            <div class="featured_info">
+              <span class="title">Who We Are</span>
+              <p>
+                Velvin Technologies Private Limited (VTPL) is a dynamic Indian technology company 
+                founded on 22 January 2021. Headquartered in Mumbai, Maharashtra, we specialize 
+                in developing innovative solutions for the Information Technology industry, 
+                empowering businesses through cutting-edge software and digital tools.
+              </p>
+            </div>
+          </div>
+    
+          <!-- Second Column -->
+          <div class="grid-col-item">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M17 14v6m-3-3h6M6 10h2a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2zm10 0h2a2 2 0 002-2V6a2 2 0 00-2-2h-2a2 2 0 00-2 2v2a2 2 0 002 2zM6 20h2a2 2 0 002-2v-2a2 2 0 00-2-2H6a2 2 0 00-2 2v2a2 2 0 002 2z"
+                />
+              </svg>
+            </div>
+            <div class="featured_info">
+              <span class="title">Our Mission</span>
+              <p>
+                Our mission is to leverage the latest advancements in technology to deliver 
+                innovative, scalable, and reliable digital solutions. We aim to empower 
+                businesses with tools that enhance productivity, efficiency, and growth.
+              </p>
+            </div>
+          </div>
+    
+          <!-- Third Column -->
+          <div class="grid-col-item">
+            <div class="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
+                />
+              </svg>
+            </div>
+            <div class="featured_info">
+              <span class="title">Our Vision</span>
+              <p>
+                Our vision is to be a global leader in technology innovation, shaping the future 
+                through solutions that not only meet current needs but anticipate future challenges. 
+                We are dedicated to continuous growth and excellence in the IT industry.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="subsidiaries wrapper">
+      <div class="container">
+        <h2 class="section-title">Our Subsidiaries</h2>
+        <div class="subsidiary-grid">
+          <!-- MyBurgo Card -->
+          <div class="subsidiary-card">
+            <img src="./img/MyBurgo_logo.svg" alt="MyBurgo Logo" class="subsidiary-logo" />
+            <p class="subsidiary-description">
+              MyBurgo is a comprehensive parenting platform that offers expert-led guidance, interactive workshops, and personalized resources to support parents and pregnant women throughout their journey.
+            </p>
+            <a href="https://www.myburgo.com" class="btn learn-more-btn">Learn More</a>
+          </div>
+    
+          <!-- Placeholder for Future Brands -->
+          <!--
+          <div class="subsidiary-card">
+            <img src="./img/future-brand.svg" alt="Future Brand" class="subsidiary-logo" />
+            <h3 class="subsidiary-name">Future Brand</h3>
+            <p class="subsidiary-description">
+              Stay tuned for more innovative solutions and apps from Velvin Technologies.
+            </p>
+            <a href="#" class="btn learn-more-btn">Coming Soon</a>
+          </div>
+          -->
+        </div>
+      </div>
+    </section>
+    
+
+    <section class="app-showcase wrapper">
+      <div class="container grid-cols-2">
+        <div class="grid-item-1 app-image">
+          <img src="./img/phonemockup.svg" alt="App showcase" />
+        </div>
+        <div class="grid-item-2 app-info">
+          <h2 class="app-title">Introducing Myburgo App</h2>
+          <p class="app-description">
+            MyBurgo is an all-in-one app designed to empower parents and pregnant women by providing tailored support at every stage of parenthood. From child development tracking and curated recipes to expert-led live workshops and mental health resources, MyBurgo offers a personalized experience that helps families thrive. The app also features community engagement, 1-on-1 consultations with professionals, and tools for self-care, making it a holistic solution for modern parenting.
+          </p>
+          <div class="download-buttons">
+            <a href="#" class="btn download-btn ">
+              <img src="./img/googleplay.svg" alt="Google Play" />
+            </a>
+            <a href="#" class="btn download-btn app-store">
+              <img src="./img/applestore.svg" alt="App Store" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    
+
+    <section class="about-velvin wrapper">
+      <div class="container">
+        <div class="about-content">
+          <h2 class="section-title">About Velvin Technologies</h2>
+          <p class="about-text">
+            Velvin Technologies is a cutting-edge technology company committed to 
+            delivering innovative solutions that empower businesses and individuals 
+            alike. Our mission is to create digital tools that transform industries 
+            and enhance everyday experiences.
+          </p>
+          <p class="about-text">
+            Our vision is to be a global leader in technology, driving progress 
+            through the development of software products and services that are 
+            reliable, scalable, and user-friendly. We believe in the power of 
+            technology to shape a better future for everyone.
+          </p>
+        </div>
+      </div>
+    </section>
+    
+    
+
+    <footer></footer>
+
+    <!-- ==== ANIMATE ON SCROLL JS CDN -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- ==== GSAP CDN ==== -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"></script>
+    <!-- ==== SCRIPT.JS ==== -->
+    <script src="./script.js" defer></script>
+  </body>
+</html>
